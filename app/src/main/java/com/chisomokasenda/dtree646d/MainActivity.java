@@ -54,7 +54,7 @@ public final class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     filter = inputText.getEditText().getText().toString().trim();
-                    if (filter.equals("")) {
+                    if (filter.isEmpty()) {
                         getAllPeople();
                     }
                     else
